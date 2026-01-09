@@ -76,6 +76,25 @@
                 background-color: rgb(255, 228, 196, 0.5); 
             }
 
+            .section-title {
+                text-align: center;
+                font-size: 5rem;
+                font-family: "BBH Bogle";
+                padding: 2rem;
+                margin-top: 2rem;
+                background-color: rgb(0, 0, 0, 0);
+                color: rgb(248, 235, 229);
+                text-shadow: /*for border*/
+                -2px -2px 0 #000,
+                2px -2px 0 #000,
+                -2px 2px 0 #000,
+                2px 2px 0 #000,
+                -3px 0px 0 #000,
+                3px 0px 0 #000,
+                0px -3px 0 #000,
+                0px 3px 0 #000;
+            }
+
             p {
                 justify-content: center;
                 padding: 1rem;
@@ -88,6 +107,41 @@
                 text-decoration: none;
                 color: black;
             }
+
+            h3 {
+                padding-left: 2rem;
+                font-family: "BBH Bogle";
+                font-size: 3rem;
+            }
+
+            table {
+                margin-left: 10 px;
+                font-family: "Inter";
+                border-collapse: collapse;
+                border: 2px solid rgb(138, 61, 29);
+                /* letter-spacing: 1px; interesting but no */ 
+
+            }
+
+            td, th {
+                border: 2px solid rgb(138, 61, 29);
+                padding: 0.8rem 1.6rem;
+            }
+
+            .tbl {
+                padding-left: 2rem;
+            }
+
+            #comments {
+                font-family: "Inter";
+            }
+
+            footer p {
+                font-family: "Inter";
+                text-align: center;
+                font-size: 1rem;
+            }
+
         </style>
     </head>
     <body>
@@ -97,18 +151,153 @@
             </a>
             <nav>
                 <ul>
-                    <li> <a href="about.html"> ABOUT US </a> </li>
                     <li> <a href="schedule.html"> SCHEDULE </a> </li>
-                    <li> <a href="contact.html"> GET INVOLVED </a> </li>
+                    <li> <a href="volunteer.html">VOLUNTEER</a></li>
+                    <li> <a href="participate.html">MAKE-A-THING</a></li>
+                    <li> <a href="contact.html">CONTACT</a> </li>
                 </ul>
             </nav>
         </header>
 
-        <p>
+        <!-- <p>
             Site in progress! Stay tuned for more information :) <br>
             If you have any questions, feel free to email dar23 at hampshire dot edu.
+        </p> -->
+
+        <h1 class="section-title">
+            Tentative Schedule
+        </h1>
+
+        <h3>
+            FRIDAY, February 6th
+        </h3>
+
+        <div class="tbl">
+            <table>
+                <thead>
+                    <th scope="col"> Event</th>
+                    <th scope="col"> Time</th>
+                    <th scope="col"> Location</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Check-In (with Pizza!)</td>
+                        <td>7pm</td>
+                        <td>Adele Simmons Hall (ASH)</td>
+                    </tr>
+                    <tr>
+                        <td>Team-Building Session</td>
+                        <td>8pm</td>
+                        <td>ASH</td>
+                    </tr>
+                    <tr>
+                        <td>Theme Announced/ Time Starts</td>
+                        <td>9pm</td>
+                        <td>ASH</td>
+                    </tr>
+                    <tr>
+                        <td>Insomnia Cookies</td>
+                        <td>11pm</td>
+                        <td>ASH</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+         <h3>
+            SATURDAY, February 7th
+        </h3>
+
+        <div class="tbl">
+            <table>
+                <thead>
+                    <th scope="col"> Event</th>
+                    <th scope="col"> Time</th>
+                    <th scope="col"> Location</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Coffee and Donuts</td>
+                        <td>9am</td>
+                        <td>ASH</td>
+                    </tr>
+                    <tr>
+                        <td>Support and Troubleshooting Session</td>
+                        <td>12pm</td>
+                        <td>Music and Dance Building - Boat</td>
+                    </tr>
+                    <tr>
+                        <td>Pizza!</td>
+                        <td>7pm</td>
+                        <td>ASH</td>
+                    </tr>
+                    <tr>
+                        <td>Support and Troubleshooting Session</td>
+                        <td>9pm</td>
+                        <td>Music and Dance Building - Boat</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+         <h3>
+            SUNDAY, February 8th
+        </h3>
+
+        <div class="tbl">
+            <table>
+                <thead>
+                    <th scope="col"> Event</th>
+                    <th scope="col"> Time</th>
+                    <th scope="col"> Location</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Soft Project Deadline (36 Hour Mark)</td>
+                        <td>9am</td>
+                    </tr>
+                    <tr>
+                        <td>Time Ends!</td>
+                        <td>10am</td>
+                    </tr>
+                    <tr>
+                        <td>Showcase</td>
+                        <td>12pm</td>
+                        <td>Kern (if project allows)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p id="comments">
+            Similar to other Hackathons, the teams are encouraged to spend the majority of their working time in ASH and other buildings in the 
+            arts village, as this is where volunteers will be available to help (along with coffee and snacks). It also helps to be surrounded by 
+            other people doing cool projects when trying to stay motivated to do your own! Nevertheless, you can work anywhere, as long as your 
+            project is submitted before time ends, at 10am on Sunday. 
+
+            <br>
+            <br>
+
+            If you need a particular space open to you in order to complete your project, please let us know! We should be able to get it 
+            cleared with the building managers. 
+
+            <br>
+            <br>
+
+            We are hoping to showcase as many projects as possible in the Kern since it is more public and central to campus. However, if your
+            project is better showcased somewhere else (for example, a dance would be better suited to the Music and Dance Building) then you
+            are welcome to showcase it there! We will discuss showcasing with each team leading up to the deadline, and we have two hours in between
+            the end of the jam and the beginning of the showcase to sort out last minute details like this. The showcase is also slotted to end at 5pm,
+            so for example, the hypothetical dance project could be showcased 4pm to allow concurrent showcases to run before in the Kern, and then 
+            those interested could attend the dance. Long story short, we will try to accomodate anything! 
         </p>
 
-       
+        <p>
+            A finalized version of the schedule will be available here soon.
+        </p>
+
+        <footer>
+            <p> 2026 - <a href="https://www.hampshire.edu/"> Hampshire College</a> Event made possible by the Math Collective and Residence Life :)</p>
+        </footer>
     </body>
 </html>
