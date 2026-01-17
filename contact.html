@@ -6,103 +6,33 @@
         <meta name="viewport" content="width=device-width" />
         <title> Hampshire Makeathon! </title>
 
-        <!-- icon -->
+         <link rel="icon" href="assets/hamp_logo.png" type="image/x-icon"/>
 
         <link rel="stylesheet" href="style.css">
 
         <style>
-            @font-face {
-                font-family: "BBH Bogle";
-                src: url("fonts/BBH_Bogle/BBHBogle-Regular.ttf");
-            }
-
-            @font-face {
-                font-family: "BBH Hegarty";
-                src: url("fonts/BBH_Hegarty/BBHHegarty-Regular.ttf");
-            }
-
-            @font-face {
-                font-family: "Inter";
-                src: url("fonts/Inter/Inter-VariableFont_opsz\,wght.ttf");
-            }
-
-            body {
-                background-color: rgb(155, 210, 250);
-            }
-
             header {
-                display: flex;
-                align-items: center;
-                font-family: "BBH Bogle";
-                position: sticky;
-                top: 0;
-                background-color: bisque;
-                z-index: 1000;
-                padding: 0.2rem;
+                background-image: url(assets/solarcanopy.png);
+                background-size: cover;
             }
 
-            nav ul {
-                display: flex;
-                gap: 1.5 rem;
-                list-style: none;
-                margin: 3rem;
-                padding: 0;
-                font-size: 1.5rem;
-            }
 
-            nav ul li {
-                margin-right: 2rem;
-            }
+        </style> 
 
-            #title {
-                display: flex;
-                margin: 2rem;
-                font-family: "BBH Hegarty";
-                /* font-family: "Verdana"; */
-                font-size: 3rem;
-                color: rgb(247, 117, 61);
-                text-shadow: /*for border*/
-                -2px -2px 0 #000,
-                2px -2px 0 #000,
-                -2px 2px 0 #000,
-                2px 2px 0 #000,
-                -3px 0px 0 #000,
-                3px 0px 0 #000,
-                0px -3px 0 #000,
-                0px 3px 0 #000;
-            }
-
-            #with-shadow {
-                background-color: rgb(255, 228, 196, 0.5); 
-            }
-
-            p {
-                justify-content: center;
-                padding: 1rem;
-                margin: 5rem;
-                font-family: "BBH Bogle";
-                font-size: 2rem;
-            }
-
-            a {
-                text-decoration: none;
-                color: black;
-            }
-
-            footer p {
-                font-family: "Inter";
-                text-align: center;
-                font-size: 1rem;
-            }
-
-        </style>
+        <link rel="stylesheet" href="style.css">
+        <script src="mobile-scripts.js" defer></script>
     </head>
     <body>
         <header>
-            <a href="index.html">
+            <button id="menu-button">
+                ≡
+            </button>
+
+            <a id="title-link" href="index.html">
                 <h1 id="title"> Hampshire <br> Makeathon </h1>
             </a>
-            <nav>
+
+            <nav id="mobile-menu">
                 <ul>
                     <li> <a href="schedule.html"> SCHEDULE </a> </li>
                     <li> <a href="volunteer.html">VOLUNTEER</a></li>
@@ -123,3 +53,4 @@
        
     </body>
 </html>
+

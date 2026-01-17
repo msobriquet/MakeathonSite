@@ -6,11 +6,17 @@
         <meta name="viewport" content="width=device-width" />
         <title> Hampshire Makeathon! </title>
 
-        <!-- icon -->
-
-        <link rel="stylesheet" href="style.css">
+         <link rel="icon" href="assets/hamp_logo.png" type="image/x-icon"/>
 
         <style>
+            header {
+                background-image: url(assets/solarcanopy.png);
+                background-size: cover;
+            }
+
+
+        </style> 
+        <!-- <style>
             @font-face {
                 font-family: "BBH Bogle";
                 src: url("fonts/BBH_Bogle/BBHBogle-Regular.ttf");
@@ -95,14 +101,23 @@
                 font-size: 1rem;
             }
 
-        </style>
+        </style> -->
+
+        <link rel="stylesheet" href="style.css">
+        <script src="mobile-scripts.js" defer></script>
+        
     </head>
     <body>
         <header>
-            <a href="index.html">
+            <button id="menu-button">
+                ≡
+            </button>
+
+            <a id="title-link" href="index.html">
                 <h1 id="title"> Hampshire <br> Makeathon </h1>
             </a>
-            <nav>
+
+            <nav id="mobile-menu">
                 <ul>
                     <li> <a href="schedule.html"> SCHEDULE </a> </li>
                     <li> <a href="volunteer.html">VOLUNTEER</a></li>

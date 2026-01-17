@@ -6,9 +6,7 @@
         <meta name="viewport" content="width=device-width" />
         <title> Hampshire Makeathon! </title>
 
-        <!-- icon -->
-
-        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="assets/hamp_logo.png" type="image/x-icon"/>
 
         <style>
             @font-face {
@@ -27,93 +25,19 @@
             }
 
             body {
-                background-color: rgb(155, 210, 250);
-                background-image: url(solarcanopy.png);
+                background-image: url(assets/solarcanopy.png);
                 background-size: 100%;
                 background-repeat: no-repeat; 
             }
 
-            header {
-                display: flex;
-                align-items: center;
-                font-family: "BBH Bogle";
-                position: sticky;
-                top: 0;
-                background-color: bisque;
-                z-index: 1000;
-            }
-
-            nav ul {
-                display: flex;
-                gap: 1.5 rem;
-                list-style: none;
-                margin: 3rem;
-                padding: 0;
-                font-size: 1.5rem;
-            }
-
-            nav ul li {
-                margin-right: 2rem;
-            }
-
-            #title {
-                margin-right: 10rem;
-                display: flex;
-                /* margin: 2rem; */
-                font-family: "BBH Hegarty";
-                /* font-family: "Verdana"; */
-                font-size: 3rem;
-                color: rgb(247, 117, 61);
-                text-shadow: /*for border*/
-                -2px -2px 0 #000,
-                2px -2px 0 #000,
-                -2px 2px 0 #000,
-                2px 2px 0 #000,
-                -3px 0px 0 #000,
-                3px 0px 0 #000,
-                0px -3px 0 #000,
-                0px 3px 0 #000;
-            }
-
-            #with-shadow {
-                background-color: rgb(255, 228, 196, 0.5); 
-            }
-
-            p {
-                justify-content: center;
-                padding: 1rem;
-                margin: 5rem;
-                font-family: "Inter";
-                font-size: 2rem;
-            }
-
-            a {
-                text-decoration: none;
-                color: black;
-            }
-
-
-            .section-title {
-                font-size: 5rem;
-                font-family: "BBH Bogle";
-                padding: 2rem;
-                margin-top: 2rem;
-                background-color: rgb(0, 0, 0, 0);
-                color: rgb(248, 235, 229);
-                text-shadow: /*for border*/
-                -2px -2px 0 #000,
-                2px -2px 0 #000,
-                -2px 2px 0 #000,
-                2px 2px 0 #000,
-                -3px 0px 0 #000,
-                3px 0px 0 #000,
-                0px -3px 0 #000,
-                0px 3px 0 #000;
+            #intro {
+                margin-top: 10rem;
             }
 
             #dates {
-                display: flex;
+                display: flex; /* puts p elements in a row*/
                 align-items: center;
+                flex-wrap: wrap;
             }
 
             #dates p {
@@ -133,20 +57,57 @@
                 0px 3px 0 #000;
             }
 
+            #comments {
+                margin-top: 0rem;
+            }
+
             footer p {
                 text-align: center;
                 font-size: 1rem;
             }
+
+            @media (max-width: 768px) { /* mobile rendering */
+                #intro {
+                    margin-top: 6rem;
+                }
+                #dates {
+                    flex-direction: column;
+                    align-items: stretch;
+                    width: 100%;
+                }
+
+                #dates p {
+                    margin-left: 2rem;
+                    font-size: 2.1rem;
+                    text-shadow: /*for border*/
+                    -0.5px -0.5px 0 #000,
+                    0.5px -0.5px 0 #000,
+                    -0.5px 0.5px 0 #000,
+                    0.5px 0.5px 0 #000,
+                    -0.8px 0px 0 #000,
+                    0.8px 0px 0 #000,
+                    0px -0.8px 0 #000,
+                    0px 0.8px 0 #000;
+                }
+            }
+
         </style>
 
+        <link rel="stylesheet" href="style.css" defer>
+        <script src="mobile-scripts.js" defer></script>
        
     </head>
     <body>
         <header>
-            <a href="index.html">
+            <button id="menu-button">
+                ≡
+            </button>
+
+            <a id="title-link" href="index.html">
                 <h1 id="title"> Hampshire <br> Makeathon </h1>
             </a>
-            <nav>
+
+            <nav id="mobile-menu">
                 <ul>
                     <li> <a href="schedule.html"> SCHEDULE </a> </li>
                     <li> <a href="volunteer.html">VOLUNTEER</a></li>
@@ -157,14 +118,14 @@
         </header>
 
         <div id="dates">
-            <p>
+            <p id="left-text">
                 Jam <br>
                 Feb 6-8th | 36 hours <br>
                 Check-in at 7pm <br>
                 Building TBD, Hampshire College
             </p>
 
-            <p>
+            <p id="right-text">
                 Showcase <br>
                 Sunday, Feb 8th at 12pm <br>
                 R.W Kern Center, Hampshire College
@@ -176,11 +137,11 @@
             If you have any questions, feel free to email dar23 at hampshire dot edu.
         </p>
 
-        <h1 class="section-title">
+        <h1 id="intro" class="section-title">
             What's a 'Makeathon?'
         </h1>
 
-        <p>
+        <p id="comments">
             Challenge yourself to brainstorm, create, and showcase a project based on a given theme in 36 hours! Although this concept
             comes from Hackathons and Game Jams, which are computer-science-focused events, in the Hampshire tradition our 'Makeathon' is interdisciplinary, meaning 
             any project—dance, film, writing, coding, math, art, music, etc.—is welcome, as long as it addresses the theme in some way, 

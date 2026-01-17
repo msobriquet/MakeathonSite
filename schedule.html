@@ -6,9 +6,7 @@
         <meta name="viewport" content="width=device-width" />
         <title> Hampshire Makeathon! </title>
 
-        <!-- icon -->
-
-        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="assets/hamp_logo.png" type="image/x-icon"/>
 
         <style>
             @font-face {
@@ -26,86 +24,9 @@
                 src: url("fonts/Inter/Inter-VariableFont_opsz\,wght.ttf");
             }
 
-            body {
-                background-color: rgb(155, 210, 250);
-            }
-
             header {
-                display: flex;
-                align-items: center;
-                font-family: "BBH Bogle";
-                position: sticky;
-                top: 0;
-                background-color: bisque;
-                z-index: 1000;
-                padding: 0.2rem;
-            }
-
-            nav ul {
-                display: flex;
-                gap: 1.5 rem;
-                list-style: none;
-                margin: 3rem;
-                padding: 0;
-                font-size: 1.5rem;
-            }
-
-            nav ul li {
-                margin-right: 2rem;
-            }
-
-            #title {
-                display: flex;
-                margin: 2rem;
-                font-family: "BBH Hegarty";
-                /* font-family: "Verdana"; */
-                font-size: 3rem;
-                color: rgb(247, 117, 61);
-                text-shadow: /*for border*/
-                -2px -2px 0 #000,
-                2px -2px 0 #000,
-                -2px 2px 0 #000,
-                2px 2px 0 #000,
-                -3px 0px 0 #000,
-                3px 0px 0 #000,
-                0px -3px 0 #000,
-                0px 3px 0 #000;
-            }
-
-            #with-shadow {
-                background-color: rgb(255, 228, 196, 0.5); 
-            }
-
-            .section-title {
-                text-align: center;
-                font-size: 5rem;
-                font-family: "BBH Bogle";
-                padding: 2rem;
-                margin-top: 2rem;
-                background-color: rgb(0, 0, 0, 0);
-                color: rgb(248, 235, 229);
-                text-shadow: /*for border*/
-                -2px -2px 0 #000,
-                2px -2px 0 #000,
-                -2px 2px 0 #000,
-                2px 2px 0 #000,
-                -3px 0px 0 #000,
-                3px 0px 0 #000,
-                0px -3px 0 #000,
-                0px 3px 0 #000;
-            }
-
-            p {
-                justify-content: center;
-                padding: 1rem;
-                margin: 5rem;
-                font-family: "BBH Bogle";
-                font-size: 2rem;
-            }
-
-            a {
-                text-decoration: none;
-                color: black;
+                background-image: url(assets/solarcanopy.png);
+                background-size: cover;
             }
 
             h3 {
@@ -136,20 +57,38 @@
                 font-family: "Inter";
             }
 
-            footer p {
-                font-family: "Inter";
-                text-align: center;
-                font-size: 1rem;
-            }
+            @media (max-width: 768px) { /* mobile rendering */
+                h3 {
+                    font-size: 2.2rem;
+                }
 
+                .tbl {
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    font-size: 0.9rem;
+                }
+
+                #comments {
+                    font-size: 1rem;
+                }
+            }
         </style>
+
+        <link rel="stylesheet" href="style.css">
+        <script src="mobile-scripts.js" defer></script>
+        
     </head>
     <body>
         <header>
-            <a href="index.html">
+            <button id="menu-button">
+                ≡
+            </button>
+
+            <a id="title-link" href="index.html">
                 <h1 id="title"> Hampshire <br> Makeathon </h1>
             </a>
-            <nav>
+
+            <nav id="mobile-menu">
                 <ul>
                     <li> <a href="schedule.html"> SCHEDULE </a> </li>
                     <li> <a href="volunteer.html">VOLUNTEER</a></li>
@@ -158,11 +97,6 @@
                 </ul>
             </nav>
         </header>
-
-        <!-- <p>
-            Site in progress! Stay tuned for more information :) <br>
-            If you have any questions, feel free to email dar23 at hampshire dot edu.
-        </p> -->
 
         <h1 class="section-title">
             Tentative Schedule
@@ -270,6 +204,8 @@
         </div>
 
         <p id="comments">
+            <br>
+            <br>
             Similar to other Hackathons, the teams are encouraged to spend the majority of their working time in ASH and other buildings in the 
             arts village, as this is where volunteers will be available to help (along with coffee and snacks). It also helps to be surrounded by 
             other people doing cool projects when trying to stay motivated to do your own! Nevertheless, you can work anywhere, as long as your 
