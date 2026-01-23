@@ -14,7 +14,7 @@
 }
 
 body {
-    background-color: rgb(155, 210, 250);
+    background-color: rgb(182, 219, 245);
 }
 
 header {
@@ -29,7 +29,7 @@ nav ul {
     list-style: none;
     margin: 3rem;
     padding: 0;
-    font-size: 2rem;
+    font-size: 2.3rem;
 }
 
 nav ul li {
@@ -57,7 +57,7 @@ nav ul li {
     0px 3px 0 #000;
 }
 
-#with-shadow {
+.with-shadow {
     background-color: rgb(255, 228, 196, 0.5); 
 }
 
@@ -66,7 +66,7 @@ p {
     padding: 1rem;
     margin: 5rem;
     font-family: "Inter";
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 
 a {
@@ -76,7 +76,7 @@ a {
 
 
 .section-title {
-    font-size: 4.5rem;
+    font-size: 4rem;
     font-family: "BBH Hegarty";
     padding: 2rem;
     margin: 2rem;
@@ -125,11 +125,12 @@ footer p {
     }
 
     #menu-button {
+        font-size: 1.5rem;
         display: block;
-        margin-left: 1.3rem;
+        margin-left: 1rem;
         border-style: double;
-        height: 2.2rem;
-        width: 2.2rem;
+        height: 2.6rem;
+        width: 2.6rem;
         z-index: 1002;
 
     }
@@ -144,6 +145,9 @@ footer p {
         /*hidden by default*/
         opacity: 0;
         transition: opacity 0.3s ease;
+
+        /* disable pointer events when hidden */
+        pointer-events: none;
     }
 
     #mobile-menu ul {
@@ -167,12 +171,13 @@ footer p {
 
     #mobile-menu.open {
         opacity: 1;
+        pointer-events: all;
     }
 
     .section-title {
         text-align: center;
         margin: 0rem;
-        font-size: 2.5rem;
+        font-size: 2rem;
         -webkit-text-stroke: #000 0.0005rem;
         /* text-shadow: /*for border 
         -0.5px -0.5px 0 #000,

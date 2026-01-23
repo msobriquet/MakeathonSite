@@ -25,13 +25,17 @@
             }
 
             body {
-                background-image: url(assets/solarcanopy.png);
-                background-size: 100%;
-                background-repeat: no-repeat; 
+                margin: 0;
+                padding: 0;
+
             }
 
-            #intro {
-                margin-top: 10rem;
+            #with-background {
+                background-image: url(assets/solarcanopy.png);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat; 
+                padding: 1rem;
             }
 
             #dates {
@@ -59,17 +63,16 @@
 
             #comments {
                 margin-top: 0rem;
+                padding: 1rem;
             }
 
             footer p {
                 text-align: center;
                 font-size: 1rem;
+                padding: 1rem;
             }
 
             @media (max-width: 768px) { /* mobile rendering */
-                #intro {
-                    margin-top: 6rem;
-                }
                 #dates {
                     flex-direction: column;
                     align-items: stretch;
@@ -98,44 +101,54 @@
        
     </head>
     <body>
-        <header>
-            <button id="menu-button">
-                ≡
-            </button>
+        <div id="with-background">
+            <header>
+                <button id="menu-button">
+                    ≡
+                </button>
 
-            <a id="title-link" href="index.html">
-                <h1 id="title"> Hampshire <br> Makeathon </h1>
-            </a>
+                <a id="title-link" href="index.html">
+                    <h1 id="title"> Hampshire <br> Makeathon </h1>
+                </a>
 
-            <nav id="mobile-menu">
-                <ul>
-                    <li> <a href="schedule.html"> SCHEDULE </a> </li>
-                    <li> <a href="volunteer.html">VOLUNTEER</a></li>
-                    <li> <a href="participate.html">MAKE-A-THING</a></li>
-                    <li> <a href="contact.html">CONTACT</a> </li>
-                </ul>
-            </nav>
-        </header>
+                <nav id="mobile-menu">
+                    <ul>
+                        <li> <a href="schedule.html"> SCHEDULE </a> </li>
+                        <li> <a href="volunteer.html">VOLUNTEER</a></li>
+                        <li> <a href="participate.html">MAKE-A-THING</a></li>
+                        <li> <a href="contact.html">CONTACT</a> </li>
+                    </ul>
+                </nav>
+            </header>
 
-        <div id="dates">
-            <p id="left-text">
-                Jam <br>
-                Feb 6-8th | 36 hours <br>
-                Check-in at 7pm <br>
-                Building TBD, Hampshire College
-            </p>
+            <div id="dates">
+                <p id="left-text">
+                    Jam <br>
+                    Feb 6-8th | 36 hours <br>
+                    Check-in at 7pm <br>
+                    Building TBD, Hampshire College
+                </p>
 
-            <p id="right-text">
-                Showcase <br>
-                Sunday, Feb 8th at 12pm <br>
-                R.W Kern Center, Hampshire College
+                <p id="right-text">
+                    Showcase <br>
+                    Sunday, Feb 8th at 12pm <br>
+                    R.W Kern Center, Hampshire College
+                </p>
+            </div>
+
+            <p>
+                <br>
             </p>
         </div>
 
-        <p id="with-shadow">
-           Site in progress! Stay tuned for more information :) <br>
-            If you have any questions, feel free to email dar23 at hampshire dot edu.
+        <p>
+        Hampshire is an incredible place for students to explore their interests, but it can also be isolating. Although many students have 
+        overlapping interests and fields, everyone truly has a unique major, which can make it difficult to create community in an academic sense, especially if your focus is not the performing arts. 
+        The Makeathon is an opportunity to come together and apply your hard-earned expertise alongside other Hampshire students; to share the fruits of your labor 
+        with your friends and the Hampshire community. 
         </p>
+
+       
 
         <h1 id="intro" class="section-title">
             What's a 'Makeathon?'
@@ -156,7 +169,7 @@
 
             There will also be food and goodies throughout the weekend to keep everyone fueled and motivated! <br> <br>
 
-            If you are interested in participating, volunteering, or donating, stay tuned! Sign-ups will be posted to this site soon.
+            If you are interested in participating or volunteering, please visit the rest of the site! There are sign-up forms linked. 
         </p>
 
         <footer>
